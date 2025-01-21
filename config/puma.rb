@@ -16,7 +16,7 @@ environment ENV.fetch('RAILS_ENV', 'development')
 pidfile ENV.fetch('PIDFILE', 'tmp/pids/server.pid')
 
 # Number of workers (processes)
-workers ENV.fetch('WEB_CONCURRENCY', 3).to_i
+workers ENV.fetch('WEB_CONCURRENCY', 2).to_i
 
 # Preload the app for Copy-On-Write memory savings
 preload_app!

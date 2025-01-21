@@ -86,6 +86,7 @@ staging:
   username: <%= Rails.application.credentials.dig(:database, :username) %>
   password: <%= Rails.application.credentials.dig(:database, :password) %>
   host: <%= Rails.application.credentials.dig(:database, :host) %>
+  pool: 5
 
 production:
   <<: *default

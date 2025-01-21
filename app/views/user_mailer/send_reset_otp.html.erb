@@ -1,0 +1,21 @@
+<!-- app/views/user_mailer/send_reset_otp.html.erb -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Password Reset OTP</h1>
+
+    <p>Hello <%= @user.name %>,</p>
+
+    <p>Your OTP for resetting your password is:</p>
+
+    <h2 style="color: #4CAF50; font-size: 24px;"><%= @otp %></h2>
+
+    <p>If you did not request this, please ignore this email.</p>
+
+    <p>Best regards,<br>
+       The PlayerU Team</p>
+  </body>
+</html>

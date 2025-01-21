@@ -1,0 +1,32 @@
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+  DisplayCopNames: true
+  TargetRubyVersion: 3.3.6
+  Exclude:
+    - "db/**/*"
+    - "config/**/*"
+    - "bin/**"
+    - "vendor/**/*"
+    - "Rakefile"
+
+Style/Documentation:
+  Enabled: false
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never
+Layout/LineLength:
+  Enabled: true
+  Max: 145
+Metrics/BlockLength:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 20
+Metrics/ClassLength:
+  Max: 160
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "spec/**/*"
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Metrics/AbcSize:
+  Max: 20
